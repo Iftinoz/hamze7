@@ -1,0 +1,28 @@
+<GridLayout rows="*" columns="*" class="page">
+  <StackLayout row="0" class="container">
+    <Label 
+      [text]="title" 
+      class="title-label"
+      horizontalAlignment="center"
+      fontSize="24"
+      fontWeight="bold"
+      marginTop="20">
+    </Label>
+    
+    <Label 
+      [text]="message" 
+      class="message-label"
+      horizontalAlignment="center"
+      marginTop="20"
+      textWrap="true">
+    </Label>
+    
+    <Button 
+      text="Tap Me!" 
+      (tap)="onButtonTap()"
+      class="btn"
+      marginTop="30"
+      horizontalAlignment="center">
+    </Button>
+  </StackLayout>
+</GridLayout>
